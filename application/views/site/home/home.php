@@ -7,9 +7,8 @@
 		$('.counter').counterUp({
 			delay : 10,
 			time : 1000
-		});
-		mail
-	}); 
+		}); mail
+	});
 </script>
 <script type="text/javascript">
 	(function($) {
@@ -23,11 +22,8 @@
 				customClass : 'vert'
 			});
 		});
-	})(jQuery); 
+	})(jQuery);
 </script>
-
-
-		
         <!-- end fixedmenu -->
 		<?php $ses_data = $this -> session -> userdata('user_details'); ?>
           <!-- end servicesbox -->
@@ -86,8 +82,8 @@
 						
 		if (empty($ses_data)){ ?>
 		<?php
-			if ($this -> session -> flashdata('error') !== FALSE) { echo $this -> session -> flashdata('error');
-			}
+		if ($this -> session -> flashdata('error') !== FALSE) { echo $this -> session -> flashdata('error');
+		}
  ?>
 	<?php 
 	if(isset($msg)){
@@ -210,7 +206,7 @@
 
 		//$('.error').hasOwnProperty
 
-	}); 
+	});
 </script>
 
 <style>
@@ -231,17 +227,17 @@
 </style>
 
 <?php
-	//$test= array_map(function($key){ return array_values($key); }, $mapaa);
+//$test= array_map(function($key){ return array_values($key); }, $mapaa);
 
-	$i = 0;
-	foreach ($map as $colleges) {
-		$data['locations'][$i][0] = "<p class='college-name'>" . $colleges['name'] . "</p><p class='addres-tag'><span style='color: #C76135;font-weight: bold!important;'>Details from Google Maps</span></br>" . $colleges['location'] . "&nbsp;" . $colleges['address'] . "</p>";
-		$data['locations'][$i][1] = $colleges['latitude'];
-		$data['locations'][$i][2] = $colleges['longitude'];
-		$data['locations'][$i][3] = $colleges['id'];
-		$i++;
-	}
-	$mapdatanew = json_encode($data['locations']);
+$i = 0;
+foreach ($map as $colleges) {
+	$data['locations'][$i][0] = "<p class='college-name'>" . $colleges['name'] . "</p><p class='addres-tag'><span style='color: #C76135;font-weight: bold!important;'>Details from Google Maps</span></br>" . $colleges['location'] . "&nbsp;" . $colleges['address'] . "</p>";
+	$data['locations'][$i][1] = $colleges['latitude'];
+	$data['locations'][$i][2] = $colleges['longitude'];
+	$data['locations'][$i][3] = $colleges['id'];
+	$i++;
+}
+$mapdatanew = json_encode($data['locations']);
  ?>
 <script src="http://maps.google.com/maps/api/js?sensor=false" 
           type="text/javascript"></script>

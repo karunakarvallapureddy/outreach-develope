@@ -1,5 +1,5 @@
 <!-- end fixedmenu -->
-		<?php $ses_data=$this->session->userdata('user_details'); ?>
+		<?php $ses_data = $this -> session -> userdata('user_details'); ?>
           <!-- end servicesbox -->
 		<section class="strip-colors">
 		<div class="container">
@@ -8,7 +8,7 @@
 					<div class="icon-box-top">
 					<div class="value-disp">
 						<p align="left" class="value-list">
-							<span class="counter1" style="display:inline-block; color:#fff;"><?php echo $nodalcoordinatorcounthistroy[0]['participants']; ?>/<?php echo  $nodalcoordinatorworkshop['experiments']; ?></span><span class="resu-top">EXPERIMENTS</span>
+							<span class="counter1" style="display:inline-block; color:#fff;"><?php echo $nodalcoordinatorcounthistroy[0]['participants']; ?>/<?php echo $nodalcoordinatorworkshop['experiments']; ?></span><span class="resu-top">EXPERIMENTS</span>
 						</p>
 						</div>
 					</div>
@@ -17,7 +17,7 @@
 					<div class="icon-box-top">
 						<div class="value-disp">
 						<p align="left" class="value-list">
-							<span class="counter1" style="display: inline-block;color:#fff;"><?php echo $nodalcoordinatorcounthistroy[0]['experiments']; ?>/<?php echo  $nodalcoordinatorworkshop['participants']; ?></span><span class="resu-top">PARTICIPANTS</span>
+							<span class="counter1" style="display: inline-block;color:#fff;"><?php echo $nodalcoordinatorcounthistroy[0]['experiments']; ?>/<?php echo $nodalcoordinatorworkshop['participants']; ?></span><span class="resu-top">PARTICIPANTS</span>
 						</p>
 					</div></div>
 				</div>
@@ -25,7 +25,7 @@
 					<div class="icon-box-top">
 					<div class="value-disp">
 						<p align="left" class="value-list">
-							<span class="counter1" style="display:inline-block; color:#fff;"><?php echo $nodalcoordinatorworkshopcount; ?>/<?php echo  $nodalcoordinatorworkshop['workshop']; ?></span><span class="resu-top">WORKSHOPS</span>
+							<span class="counter1" style="display:inline-block; color:#fff;"><?php echo $nodalcoordinatorworkshopcount; ?>/<?php echo $nodalcoordinatorworkshop['workshop']; ?></span><span class="resu-top">WORKSHOPS</span>
 						</p>
 						</div>
 					</div>
@@ -90,127 +90,111 @@
 													<td><?php echo $workshopdata['location']; ?></td>
 													<td><?php echo $workshopdata['institute']; ?></td>
 													<!--<td><?php echo $workshopdata['date'];  ?></td>-->
-													<td><?php echo $workshopdata['no_of_participants'];  ?></td>
-													<td><?php echo $workshopdata['no-of_sessions'];  ?></td>
+													<td><?php echo $workshopdata['no_of_participants']; ?></td>
+													<td><?php echo $workshopdata['no-of_sessions']; ?></td>
 													<td><?php echo $workshopdata['duration_of_session']; ?></td>
 												
-													<td><?php echo $workshopdata['labs_planned'];  ?></td>
+													<td><?php echo $workshopdata['labs_planned']; ?></td>
 													<!--<td><?php echo $workshopdata['upload_attend_sheet']; ?></td>-->
 													</tr>
 													<?php
-											}
+													}
 											 ?>
 </table>
 <?php if($workshopdata['attendance_sheet']){
 													?>
 													<style>
-														
-tabs-below > .nav-tabs,
-.tabs-right > .nav-tabs,
-.tabs-left > .nav-tabs {
-  border-bottom: 0;
-}
+														tabs-below > .nav-tabs, .tabs-right > .nav-tabs, .tabs-left > .nav-tabs {
+															border-bottom: 0;
+														}
 
-.tab-content > .tab-pane,
-.pill-content > .pill-pane {
-  display: none;
-}
+														.tab-content > .tab-pane, .pill-content > .pill-pane {
+															display: none;
+														}
 
-.tab-content > .active,
-.pill-content > .active {
-  display: block;
-}
+														.tab-content > .active, .pill-content > .active {
+															display: block;
+														}
 
-.tabs-below > .nav-tabs {
-  border-top: 1px solid #ddd;
-}
+														.tabs-below > .nav-tabs {
+															border-top: 1px solid #ddd;
+														}
 
-.tabs-below > .nav-tabs > li {
-  margin-top: -1px;
-  margin-bottom: 0;
-}
+														.tabs-below > .nav-tabs > li {
+															margin-top: -1px;
+															margin-bottom: 0;
+														}
 
-.tabs-below > .nav-tabs > li > a {
-  -webkit-border-radius: 0 0 4px 4px;
-     -moz-border-radius: 0 0 4px 4px;
-          border-radius: 0 0 4px 4px;
-}
+														.tabs-below > .nav-tabs > li > a {
+															-webkit-border-radius: 0 0 4px 4px;
+															-moz-border-radius: 0 0 4px 4px;
+															border-radius: 0 0 4px 4px;
+														}
 
-.tabs-below > .nav-tabs > li > a:hover,
-.tabs-below > .nav-tabs > li > a:focus {
-  border-top-color: #ddd;
-  border-bottom-color: transparent;
-}
+														.tabs-below > .nav-tabs > li > a:hover, .tabs-below > .nav-tabs > li > a:focus {
+															border-top-color: #ddd;
+															border-bottom-color: transparent;
+														}
 
-.tabs-below > .nav-tabs > .active > a,
-.tabs-below > .nav-tabs > .active > a:hover,
-.tabs-below > .nav-tabs > .active > a:focus {
-  border-color: transparent #ddd #ddd #ddd;
-}
+														.tabs-below > .nav-tabs > .active > a, .tabs-below > .nav-tabs > .active > a:hover, .tabs-below > .nav-tabs > .active > a:focus {
+															border-color: transparent #ddd #ddd #ddd;
+														}
 
-.tabs-left > .nav-tabs > li,
-.tabs-right > .nav-tabs > li {
-  float: none;
-}
+														.tabs-left > .nav-tabs > li, .tabs-right > .nav-tabs > li {
+															float: none;
+														}
 
-.tabs-left > .nav-tabs > li > a,
-.tabs-right > .nav-tabs > li > a {
-  min-width: 74px;
-  margin-right: 0;
-  margin-bottom: 3px;
-}
+														.tabs-left > .nav-tabs > li > a, .tabs-right > .nav-tabs > li > a {
+															min-width: 74px;
+															margin-right: 0;
+															margin-bottom: 3px;
+														}
 
-.tabs-left > .nav-tabs {
-  float: left;
-  margin-right: 19px;
-  border-right: 1px solid #ddd;
-}
+														.tabs-left > .nav-tabs {
+															float: left;
+															margin-right: 19px;
+															border-right: 1px solid #ddd;
+														}
 
-.tabs-left > .nav-tabs > li > a {
-  margin-right: -1px;
-  -webkit-border-radius: 4px 0 0 4px;
-     -moz-border-radius: 4px 0 0 4px;
-          border-radius: 4px 0 0 4px;
-}
+														.tabs-left > .nav-tabs > li > a {
+															margin-right: -1px;
+															-webkit-border-radius: 4px 0 0 4px;
+															-moz-border-radius: 4px 0 0 4px;
+															border-radius: 4px 0 0 4px;
+														}
 
-.tabs-left > .nav-tabs > li > a:hover,
-.tabs-left > .nav-tabs > li > a:focus {
-  border-color: #eeeeee #dddddd #eeeeee #eeeeee;
-}
+														.tabs-left > .nav-tabs > li > a:hover, .tabs-left > .nav-tabs > li > a:focus {
+															border-color: #eeeeee #dddddd #eeeeee #eeeeee;
+														}
 
-.tabs-left > .nav-tabs .active > a,
-.tabs-left > .nav-tabs .active > a:hover,
-.tabs-left > .nav-tabs .active > a:focus {
-  border-color: #ddd transparent #ddd #ddd;
-  *border-right-color: #ffffff;
-}
+														.tabs-left > .nav-tabs .active > a, .tabs-left > .nav-tabs .active > a:hover, .tabs-left > .nav-tabs .active > a:focus {
+															border-color: #ddd transparent #ddd #ddd;
+															*border-right-color: #ffffff;
+														}
 
-.tabs-right > .nav-tabs {
-  float: right;
-  margin-left: 19px;
-  border-left: 1px solid #ddd;
-}
+														.tabs-right > .nav-tabs {
+															float: right;
+															margin-left: 19px;
+															border-left: 1px solid #ddd;
+														}
 
-.tabs-right > .nav-tabs > li > a {
-  margin-left: -1px;
-  -webkit-border-radius: 0 4px 4px 0;
-     -moz-border-radius: 0 4px 4px 0;
-          border-radius: 0 4px 4px 0;
-}
+														.tabs-right > .nav-tabs > li > a {
+															margin-left: -1px;
+															-webkit-border-radius: 0 4px 4px 0;
+															-moz-border-radius: 0 4px 4px 0;
+															border-radius: 0 4px 4px 0;
+														}
 
-.tabs-right > .nav-tabs > li > a:hover,
-.tabs-right > .nav-tabs > li > a:focus {
-  border-color: #eeeeee #eeeeee #eeeeee #dddddd;
-}
+														.tabs-right > .nav-tabs > li > a:hover, .tabs-right > .nav-tabs > li > a:focus {
+															border-color: #eeeeee #eeeeee #eeeeee #dddddd;
+														}
 
-.tabs-right > .nav-tabs .active > a,
-.tabs-right > .nav-tabs .active > a:hover,
-.tabs-right > .nav-tabs .active > a:focus {
-  border-color: #ddd #ddd #ddd transparent;
-  *border-left-color: #ffffff;
-}
+														.tabs-right > .nav-tabs .active > a, .tabs-right > .nav-tabs .active > a:hover, .tabs-right > .nav-tabs .active > a:focus {
+															border-color: #ddd #ddd #ddd transparent;
+															*border-left-color: #ffffff;
+														}
 													</style>
-													<form method="post" action="<?php echo site_url('approverepost');?>">
+													<form method="post" action="<?php echo site_url('approverepost'); ?>">
 													 <div class="tabbable tabs-left">
         <ul class="nav nav-tabs">
           <li id="clicka" class="active"><a href="#a" data-toggle="tab">Attendance sheets</a></li>
@@ -227,11 +211,12 @@ tabs-below > .nav-tabs,
  foreach($nodalphoto[0] as $nodalphotos){
 	 ?>
 	 
-  <li><img src="<?php echo base_url(); ?>uploads/workshop_photos/<?php echo  $nodalphotos; ?>"/></li>
+  <li><img src="<?php echo base_url(); ?>uploads/workshop_photos/<?php echo $nodalphotos; ?>"/></li>
  
 
 	 <?php
- } ?>		 
+	}
+ ?>		 
 		</ul>
 
 		 
@@ -292,7 +277,7 @@ tabs-below > .nav-tabs,
          </span></div>
         </div>
       </div>
-      <input type="hidden"name="workshort_id" value="<?php echo $this->uri->segment(2);  ?>">
+      <input type="hidden"name="workshort_id" value="<?php echo $this -> uri -> segment(2); ?>">
 	<input type="submit" name="approve" value="approve">
 </form>
 <div class="reportsattached">
@@ -310,7 +295,8 @@ tabs-below > .nav-tabs,
 			</div>
 			<?php
 
-											}        ?>
+			}
+        ?>
 </div> </div> 
         <section class="infoarea whites">
         <div class="container placemetns-top">
@@ -318,42 +304,44 @@ tabs-below > .nav-tabs,
 
 		</div>
         </section>
-		<script src="<?php echo base_url();?>site/js/jquery.counterup.min.js"></script>
-<script src="<?php echo base_url();?>site/js/waypoints.min.js"></script>
-<script type="text/javascript" src="<?php echo base_url();?>site/js/jquery.simplyscroll.js"></script>
-<link rel="stylesheet" href="<?php echo base_url();?>site/css/jquery.simplyscroll.css" media="all" type="text/css">
+		<script src="<?php echo base_url(); ?>site/js/jquery.counterup.min.js"></script>
+<script src="<?php echo base_url(); ?>site/js/waypoints.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>site/js/jquery.simplyscroll.js"></script>
+<link rel="stylesheet" href="<?php echo base_url(); ?>site/css/jquery.simplyscroll.css" media="all" type="text/css">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <!-- bxSlider Javascript file -->
-<script src="<?php echo base_url();?>assests/jquery.bxslider/jquery.bxslider.js"></script>
+<script src="<?php echo base_url(); ?>assests/jquery.bxslider/jquery.bxslider.js"></script>
 <!-- bxSlider CSS file -->
-<link href="<?php echo base_url();?>assests/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
+<link href="<?php echo base_url(); ?>assests/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
 <script>
- $(document).ready(function(){
-      $('.bxslider').bxSlider({
-        slideWidth: 600,
-        minSlides: 2,
-        maxSlides: 3,
-        moveSlides: 1,
-        pager: false,
-        auto: true
-      });
-	  $('#c').hide();
-	  $('.bx-wrapper').css({"margin-left":"170px"});
-    });
-	$('#clickc').click(function(){
-	$('#c').show();
-	 $('#clickc').addClass('active');
-	 $('#clicka').removeClass('active');
-	 $('#clickb').removeClass('active');
-	 $('#clickd').removeClass('active');
+	$(document).ready(function() {
+		$('.bxslider').bxSlider({
+			slideWidth : 600,
+			minSlides : 2,
+			maxSlides : 3,
+			moveSlides : 1,
+			pager : false,
+			auto : true
+		});
+		$('#c').hide();
+		$('.bx-wrapper').css({
+			"margin-left" : "170px"
+		});
 	});
-	$('#clicka').click(function(){
-	$('#c').hide();
+	$('#clickc').click(function() {
+		$('#c').show();
+		$('#clickc').addClass('active');
+		$('#clicka').removeClass('active');
+		$('#clickb').removeClass('active');
+		$('#clickd').removeClass('active');
 	});
-	$('#clickb').click(function(){
-	$('#c').hide();
+	$('#clicka').click(function() {
+		$('#c').hide();
 	});
-	$('#clickd').click(function(){
-	$('#c').hide();
+	$('#clickb').click(function() {
+		$('#c').hide();
 	});
+	$('#clickd').click(function() {
+		$('#c').hide();
+	}); 
 </script>
