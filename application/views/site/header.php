@@ -59,10 +59,6 @@
 				</li>
 </div>
 
-
-
-
-
 <?php } ?>
 <style>
 	ul li {

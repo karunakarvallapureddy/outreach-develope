@@ -22,7 +22,7 @@
 		setTimeout(function() {
 			$('#divaid').hide();
 		}, 5000);
-	}); 
+	});
 </script>
 <script type="text/javascript">
 	(function($) {
@@ -39,8 +39,6 @@
 	})(jQuery);
 
 </script>
-
-		
         <!-- end fixedmenu -->
 		<?php $ses_data = $this -> session -> userdata('user_details'); ?>
           <!-- end servicesbox -->
@@ -180,8 +178,8 @@
 			<div class="col-md-12 ">
 				<!--<div class="col-md-1 mid-align"></div>-->
 				<div class="col-md-8 mid-align" class="icon-ok"><span class="btn"><?php
-					$extension = pathinfo($guidance['document_path'], PATHINFO_EXTENSION);
-					echo strtoupper($extension);
+				$extension = pathinfo($guidance['document_path'], PATHINFO_EXTENSION);
+				echo strtoupper($extension);
 				?></span>&nbsp;&nbsp;<?php echo $guidance['name']; ?></div>
 			</div>
 			<?php }} else{ ?>
@@ -196,8 +194,8 @@
 				<?php if($getWorkshopMetirial){ foreach($getWorkshopMetirial as $workshop){ ?>
 				<div class="col-md-11 mid-align"><a href="<?php echo base_url() . 'uploads/workshop_material/' . $workshop['document_path']; ?>" download>
 				<span class="btn"><?php
-					$extension = pathinfo($workshop['document_path'], PATHINFO_EXTENSION);
-					echo strtoupper($extension);
+				$extension = pathinfo($workshop['document_path'], PATHINFO_EXTENSION);
+				echo strtoupper($extension);
 				?></span></a>&nbsp;&nbsp;<?php echo $workshop['name']; ?></div>
 				<?php }} else{ ?>
 				
@@ -214,8 +212,8 @@
 				<div class="col-md-11 mid-align"><a href="<?php echo base_url() . 'uploads/presentation_reporting/' . $workshop['document_path']; ?>" download>
 				<span class="btn"><?php
 
-					$extension = pathinfo($workshop['document_path'], PATHINFO_EXTENSION);
-					echo strtoupper($extension);
+				$extension = pathinfo($workshop['document_path'], PATHINFO_EXTENSION);
+				echo strtoupper($extension);
 				?></span>
 				
 				</a>&nbsp;&nbsp;<?php echo $reporting['name']; ?></div>
@@ -388,54 +386,54 @@ From the faculty and students of the participating institutes</span></div>
 		
  <script type="text/javascript">
 	$("#feedback1-<?php echo $workshopdata["workshop_id"]; ?>
-	").click(function(){
-	if($('#reportnew-
+		").click(function(){
+		if($('#reportnew-
 <?php echo $workshopdata["workshop_id"]; ?>
-		').css('display
-		') == 'none'){
-		$('#reportnew-
+	').css('display
+	') == 'none'){
+	$('#reportnew-
 <?php echo $workshopdata["workshop_id"]; ?>
-			').show('slow');
-			$('#mew1-
+	').show('slow');
+	$('#mew1-
 <?php echo $workshopdata["workshop_id"]; ?>
-			').html("▼");
-			} else {
-			$('#reportnew-
+	').html("▼");
+	} else {
+	$('#reportnew-
 <?php echo $workshopdata["workshop_id"]; ?>
-			').hide('slow');
+	').hide('slow');
 
-			$('#mew1-
+	$('#mew1-
 <?php echo $workshopdata["workshop_id"]; ?>
-			').html("►");
-			}
-			});
+	').html("►");
+	}
+	});
 </script>	
 <script type="text/javascript">
 	$("#feedback2-<?php echo $workshopdata["workshop_id"]; ?>
-	").click(function(){
-	if($('#reportnew1-
+		").click(function(){
+		if($('#reportnew1-
 <?php echo $workshopdata["workshop_id"]; ?>
-		').css('display
-		') == 'none'){
-		$('#reportnew1-
+	').css('display
+	') == 'none'){
+	$('#reportnew1-
 <?php echo $workshopdata["workshop_id"]; ?>
-			').show('slow');
-			$('#mew2-
+	').show('slow');
+	$('#mew2-
 <?php echo $workshopdata["workshop_id"]; ?>
-			').html("▼");
-			} else {
-			$('#reportnew1-
+	').html("▼");
+	} else {
+	$('#reportnew1-
 <?php echo $workshopdata["workshop_id"]; ?>
-			').hide('slow');
+	').hide('slow');
 
-			$('#mew2-
+	$('#mew2-
 <?php echo $workshopdata["workshop_id"]; ?>
-			').html("►");
-			}
-			});
+	').html("►");
+	}
+	});
 </script>
 			<?php
-	}
+			}
 			 ?>
 
 			</div>
@@ -685,7 +683,7 @@ From the faculty and students of the participating institutes</span></div>
 								background: orange;
 							}
 
-							}											
+							}
 											</style>
 <div class="col-md-12 align-top-botm">
 				
@@ -718,8 +716,8 @@ From the faculty and students of the participating institutes</span></div>
                 <div class="col-md-2"><?php if($workshopdata['reason']){ ?><span  style="color: #CACACA;"><?php echo $workshopdata['no_of_participants']; ?></span> <?php }else{ ?><?php echo $workshopdata['no_of_participants']; ?>participants<?php } ?></div>
                 <div class="col-md-2"><?php if($workshopdata['reason']){ ?><span  style="color: #CACACA;"><?php echo $workshopdata['no-of_sessions']; ?></span><?php }else{ ?><?php echo $workshopdata['no-of_sessions']; ?> Session<?php  } ?></div>
 				                 <div class="col-md-2"> <a href="#" id='feedback-<?php echo $workshopdata["workshop_id"]; ?>'><span id="mew-<?php echo $workshopdata["workshop_id"]; ?>" >► </span> viewReport</a></div><?php
-					if ($workshopdata['reason']) { echo "Workshop Cancelled";
-					}
+								if ($workshopdata['reason']) { echo "Workshop Cancelled";
+								}
  ?>
 
              <div style='display:none' id="frn_comment-<?php echo $workshopdata["workshop_id"]; ?>"></br></br></br>
@@ -759,27 +757,27 @@ From the faculty and students of the participating institutes</span></div>
 			 
         <script type="text/javascript">
 	$("#feedback-<?php echo $workshopdata["workshop_id"]; ?>
-			").click(function(){
-			if($('#frn_comment-
+		").click(function(){
+		if($('#frn_comment-
 <?php echo $workshopdata["workshop_id"]; ?>
-		').css('display
-		') == 'none'){
-		$('#frn_comment-
+	').css('display
+	') == 'none'){
+	$('#frn_comment-
 <?php echo $workshopdata["workshop_id"]; ?>
-			').show('slow');
-			$('#mew-
+	').show('slow');
+	$('#mew-
 <?php echo $workshopdata["workshop_id"]; ?>
-			').html("▼")
-			} else {
-			$('#frn_comment-
+	').html("▼")
+	} else {
+	$('#frn_comment-
 <?php echo $workshopdata["workshop_id"]; ?>
-			').hide('slow');
+	').hide('slow');
 
-			$('#mew-
+	$('#mew-
 <?php echo $workshopdata["workshop_id"]; ?>
-			').html("►")
-			}
-			});
+	').html("►")
+	}
+	});
 </script>
 
                 

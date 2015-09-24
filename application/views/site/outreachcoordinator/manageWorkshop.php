@@ -14,7 +14,7 @@
 		setTimeout(function() {
 			$('#divaid1').hide();
 		}, 5000);
-	});
+	}); 
 </script>
 <script type="text/javascript">
 	(function($) {
@@ -28,7 +28,7 @@
 				customClass : 'vert'
 			});
 		});
-	})(jQuery); 
+	})(jQuery);
 </script>
 <style>
 	.counter1 {
@@ -38,7 +38,6 @@
 		line-height: 0px;
 	}
 </style>
-	
         <!-- end fixedmenu -->
 		<?php $ses_data = $this -> session -> userdata('user_details'); ?>
           <!-- end servicesbox -->
@@ -1053,7 +1052,7 @@
 
 		$('#displaynodalform').hide('slow');
 		$('#iconform').html("►");
-	});
+	}); 
 </script>
 <script type="text/javascript">
 	$("#addnodaltraininglink").click(function() {
@@ -1064,7 +1063,7 @@
 			$('#addnodaltraining').hide('slow');
 			$('#trainingiconform').html("►");
 		}
-	}); 
+	});
 </script>
  
         
@@ -1074,7 +1073,7 @@
         </div>
         
 		<script>
-											$("#add_nodal_center").click(function(){
+														$("#add_nodal_center").click(function(){
    	$.ajax({
 						type: "POST",
 						url: "<?php echo site_url('welcome/addNodalcenter'); ?>

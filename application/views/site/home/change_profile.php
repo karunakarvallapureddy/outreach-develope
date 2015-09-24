@@ -1,4 +1,3 @@
-<br/>
 <style>
 	.title-border-line {
 		margin-bottom: 23px;
@@ -18,7 +17,6 @@
 		padding: 0px
 	}
 </style>
-
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">

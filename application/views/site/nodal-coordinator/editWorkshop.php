@@ -38,7 +38,7 @@ foreach ($Workshopedit as $editWorkshop) {
 								<div class="form-group">
 									<label class="col-sm-3 control-label">Participating institutes</label>
 									<div class="col-sm-6">
-										<textarea  class=" form-control" name="institutes"><?php echo $editWorkshop['institutes']; ?></textarea>										
+										<textarea  class=" form-control" name="institutes"><?php echo $editWorkshop['institutes']; ?></textarea>																				
 													  <?php echo "<span style='color:red'>" . form_error('participate_institute') . "</span>"; ?>
 									</div>
 								</div>
@@ -84,7 +84,7 @@ foreach ($Workshopedit as $editWorkshop) {
 								<div class="form-group">
 									<label class="col-sm-3 control-label">Other details</label>
 									<div class="col-sm-6">
-										<textarea class="form-control" rows="3" name="other_details"><?php echo $editWorkshop['other_details']; ?></textarea>										
+										<textarea class="form-control" rows="3" name="other_details"><?php echo $editWorkshop['other_details']; ?></textarea>																				
 													  <?php echo "<span style='color:red'>" . form_error('other_details') . "</span>"; ?>
 									</div>
 								</div>

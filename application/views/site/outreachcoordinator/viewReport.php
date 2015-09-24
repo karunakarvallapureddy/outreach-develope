@@ -46,10 +46,6 @@
 		</div>
         
 		</section>
-		
-		
-		
-		
 		<!-- end homerecentportfolio -->
         <div class="container" style="margin-top:30px;">
       
@@ -343,5 +339,5 @@
 	});
 	$('#clickd').click(function() {
 		$('#c').hide();
-	}); 
+	});
 </script>
